@@ -82,7 +82,7 @@ a:hover {
     padding: 1rem !important;
   }
   img {
-    height: 250px;
+    /* height: 250px; */
   }
 }
 </style>

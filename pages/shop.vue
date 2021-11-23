@@ -41,7 +41,7 @@
           aria-labelledby="pills-home-tab"
         >
           <div class="products__container section px-3">
-            <ProductCategory v-for="x in 12" :key="x.id" />
+            <ProductCategory v-for="x in 4" :key="x.id" />
           </div>
         </div>
         <div
@@ -51,7 +51,7 @@
           aria-labelledby="pills-profile-tab"
         >
           <div class="products__container section px-3">
-            <ProductCategory v-for="x in 8" :key="x.id" />
+            <ProductCategory v-for="x in 4" :key="x.id" />
           </div>
         </div>
       </div>
@@ -84,18 +84,18 @@ export default {
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #2c2926;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .nav-pills .nav-link {
   border-radius: 0.25rem;
   color: #2c2926;
   padding: 10px 35px;
-  font-size: 17px;
+  /* font-size: 17px; */
 }
 .products__container {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem;
   row-gap: 3rem;

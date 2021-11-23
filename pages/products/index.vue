@@ -7,7 +7,7 @@
         <ProductCard v-for="x in 7" :key="x.id" />
       </div>
     </div>
-    <div class="container section px-3">
+    <div class="container px-3">
       <h4 class="mb-3 px-0 px-md-3 text-center text-md-left">
         Popular Products
       </h4>
