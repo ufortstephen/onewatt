@@ -154,12 +154,10 @@
                 <div class="d-flex">
                   <div>
                     <h5>4.25kw solar panel</h5>
-                    <p>
-                      <small class="text-muted"
-                        >Based on your $200 utility bill, we recommend 1
-                        Powerwall battery to give you 1 day of whole home
-                        backup.</small
-                      >
+
+                    <p class="text-muted">
+                      Based on your $200 utility bill, we recommend 1 Powerwall
+                      battery to give you 1 day of whole home backup.
                     </p>
                   </div>
                   <div>$70,000</div>
@@ -260,12 +258,10 @@
                 <div class="d-flex">
                   <div>
                     <h5>1 powerwall battery</h5>
-                    <p>
-                      <small class="text-muted"
-                        >Based on your $200 utility bill, we recommend 1
-                        Powerwall battery to give you 1 day of whole home
-                        backup.</small
-                      >
+
+                    <p class="text-muted">
+                      Based on your $200 utility bill, we recommend 1 Powerwall
+                      battery to give you 1 day of whole home backup.
                     </p>
                   </div>
                   <div>$70,000</div>
@@ -348,7 +344,12 @@
                 information you have provided. To increase the capacity of the
                 power wall, you can customise order below.
               </p>
-              <a class="text-info">
+              <a
+                class="text-info"
+                type="button"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+              >
                 Customize your order
                 <i class="fa fa-caret-right" aria-hidden="true"></i>
               </a>
@@ -411,6 +412,14 @@
 <script>
 export default {};
 </script>
+
+<style>
+p,
+a {
+  font-size: 16px;
+  color: #000;
+}
+</style>
 
 <style scoped>
 .products {

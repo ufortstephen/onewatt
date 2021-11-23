@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
+p {
+  color: #000;
+}
 img {
   width: 100%;
   height: 300px;
@@ -60,7 +63,7 @@ h5 {
 }
 .card:hover .category__name {
   position: absolute;
-  bottom: -5.5rem;
+  bottom: -5.8rem;
   width: 100%;
   padding: 1rem !important;
 }
@@ -91,7 +94,7 @@ a:hover {
 @media (max-width: 528px) {
   .card:hover .category__name {
     position: absolute;
-    bottom: 0rem;
+    /* bottom: 0rem; */
     width: 100%;
     padding: 1rem !important;
   }

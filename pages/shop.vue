@@ -45,7 +45,7 @@
           </div>
         </div>
         <div
-          class="tab-pane fade px-3"
+          class="tab-pane fade"
           id="pills-profile"
           role="tabpanel"
           aria-labelledby="pills-profile-tab"
@@ -91,6 +91,7 @@ export default {
   border-radius: 0.25rem;
   color: #2c2926;
   padding: 10px 35px;
+  font-size: 17px;
 }
 .products__container {
   display: grid;

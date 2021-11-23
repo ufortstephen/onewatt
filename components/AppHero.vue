@@ -23,7 +23,7 @@
                   It’s not just gas, it’s how it
                   <NuxtLink to="/" class="text-white">works.</NuxtLink>
                 </p>
-                <p class="mt-5">
+                <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
                     ><button class="mr-2 button__white">
                       ORDER NOW
@@ -82,7 +82,7 @@
                   View other features of this product
                   <NuxtLink to="/" class="text-white">here.</NuxtLink>
                 </p>
-                <p class="mt-5">
+                <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop">
                     <button class="mr-2 button__white">
                       ORDER NOW
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div
-            v-if="this.$route.name !== 'index'"
+            v-if="this.$route.name == 'index'"
             class="text-center mb-4"
             style="position: relative; top: -2rem"
           >
@@ -143,7 +143,7 @@
                   View other features of this product
                   <NuxtLink to="/" class="text-white">here.</NuxtLink>
                 </p>
-                <p class="mt-5">
+                <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop">
                     <button class="mr-2 button__white">
                       ORDER NOW
@@ -204,7 +204,7 @@
                   View other features of this product
                   <NuxtLink to="/" class="text-white">here.</NuxtLink>
                 </p>
-                <p class="mt-5">
+                <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
                     ><button class="mr-2 button__white">
                       ADD TO CART
@@ -280,6 +280,10 @@ export default {};
   background-color: rgba(0, 0, 0, 0.3);
   background-position: center;
   color: #fff !important;
+}
+
+h1 {
+  color: #fff;
 }
 
 .bg__one {

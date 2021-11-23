@@ -124,17 +124,18 @@ img {
 }
 
 .cart::after {
-  content: "1";
+  content: "";
   text-align: center;
   font-size: xx-small;
   padding-top: 0.15rem;
   position: absolute;
-  left: 9px;
-  width: 15px;
-  height: 15px;
+  right: 9px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background-color: orange;
-  top: -4px;
+  top: -10px;
+  color: #fff;
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);

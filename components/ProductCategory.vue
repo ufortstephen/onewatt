@@ -37,7 +37,7 @@ img {
   border-radius: 6px;
 }
 h5 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .view__products-btn {
@@ -80,6 +80,9 @@ a:hover {
     bottom: 0rem;
     width: 100%;
     padding: 1rem !important;
+  }
+  img {
+    height: 250px;
   }
 }
 </style>
