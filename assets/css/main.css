@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope";
+}
+
+
+/* Nav Bar and Hero HomePage */
+
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #2c2926;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 6px 12px;
+}
+
+.nav-link {
+    display: block;
+    padding: 6px 12px;
+    margin: 0 0.5rem;
+    color: #fff;
+    position: relative;
+}
+
+.navbar-nav .active .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 60%;
+    height: 3px;
+    left: 20%;
+    background-color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    width: max-content;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+    color: orange;
+}
+
+
+/* Nav Bar and Hero HomePage */
+
+
+/* CAROUSEL */
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-item-next,
+.active.carousel-item-right {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.carousel-item-prev,
+.active.carousel-item-left {
+    -webkit-transform: translate3d(0, +100%, 0);
+    transform: translate3d(0, +100, 0);
+}
+
+
+/* CAROUSEL */
+
+
+/* CAROUSEL */
+
+
+/* SHOP */
+
+.section {
+    padding: 4rem 0;
+}
+
+a:hover button:hover {
+    cursor: pointer !important;
+}
+
+
+/* SHOP */
