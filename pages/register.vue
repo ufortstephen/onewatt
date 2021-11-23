@@ -1,6 +1,6 @@
 <template>
   <div>
-     <div class="px-3 fixed-top" style="z-index: 9; background: rgb(0, 0, 0)">
+    <div class="px-3 fixed-top" style="z-index: 9; background: rgb(0, 0, 0)">
       <AppHeader />
     </div>
 
@@ -217,11 +217,12 @@ select:focus {
 @media (max-width: 568px) {
   form {
     margin: 0;
+    margin-top: 4rem;
   }
   .login__section {
     display: block;
     background: #f8f8f8;
-    min-height: 100vh;
+    min-height: max-content;
   }
 }
 </style>

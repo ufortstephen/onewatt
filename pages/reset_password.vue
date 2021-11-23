@@ -24,7 +24,7 @@
 
         <p class="mt-3">
           If you don’t have an account,
-          <NuxtLink to="/" class="blue">Register</NuxtLink>
+          <NuxtLink to="/register" class="blue">Register</NuxtLink>
         </p>
       </form>
     </div>
@@ -83,11 +83,12 @@ input:focus {
 @media (max-width: 568px) {
   form {
     margin: 0;
+    margin-top: 4rem;
   }
   .login__section {
     display: block;
     background: #f8f8f8;
-    min-height: 100vh;
+    min-height: max-content;
   }
 }
 </style>
