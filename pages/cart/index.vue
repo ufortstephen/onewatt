@@ -59,6 +59,10 @@ export default {};
   border-radius: 4px;
   font-size: 14px;
 }
+h6,
+p {
+  color: #000;
+}
 
 @media (max-width: 991px) {
   .items {
