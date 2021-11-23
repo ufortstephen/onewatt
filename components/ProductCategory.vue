@@ -2,7 +2,7 @@
   <div class="product__card card">
     <img src="~assets/images/bg__two.png" alt="" />
     <div class="category__name py-3 pl-2">
-      <h5 class="">Category Name</h5>
+      <h6 class="">Category Name</h6>
       <NuxtLink to="/products">
         <button class="view__products-btn">VIEW ALL PRODUCTS</button>
       </NuxtLink>
@@ -42,7 +42,6 @@ h5 {
 
 .view__products-btn {
   position: relative;
-
   background: #303030;
   font-size: 11px;
   text-align: center;

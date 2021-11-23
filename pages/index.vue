@@ -8,9 +8,12 @@
 export default {};
 </script>
 
-<style>
-* {
-  padding: 0;
-  margin: 0;
+<style >
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+}
+.text-muted{
+  color: #84807C;
 }
 </style>

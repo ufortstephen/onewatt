@@ -3,7 +3,7 @@
     <div class="out__of__stock"><small>OUT OF STOCK</small></div>
     <img src="~assets/images/bg__two.png" alt="" />
     <div class="category__name py-3 pl-2">
-      <h5 class="">Product Name</h5>
+      <h6 class="">Product Name</h6>
       <p class="mb-0">
         NGN 250,000 <strike class="small ml-3">NGN 500,000</strike>
       </p>
@@ -23,6 +23,7 @@ export default {
 <style scoped>
 p {
   color: #000;
+  font-size: small;
 }
 img {
   width: 100%;

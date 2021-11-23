@@ -134,7 +134,7 @@ img {
   height: 13px;
   border-radius: 50%;
   background-color: orange;
-  top: -10px;
+  top: -5px;
   color: #fff;
 }
 .navbar-light .navbar-toggler {

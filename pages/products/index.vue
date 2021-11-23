@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <AppFooter />
+    <AppFooter class="mt-5" />
   </div>
 </template>
 
@@ -31,17 +31,35 @@ export default {
 
 <style scoped>
 .products__container {
-  /* display: grid;
-  
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 1rem;
-  row-gap: 3rem; */
   display: grid;
   grid-gap: 1rem;
   padding: 16px;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, 1fr);
-  overflow-x: auto;
+  overflow-x: scroll;
 }
+
+.products__container::-webkit-scrollbar {
+  /* display: none; */
+}
+
+/* .products__container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.products__container::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.products__container::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  height: 3px;
+  width: 3px;
+  -webkit-box-shadow: none;
+  border-radius: 70px;
+  background: #000;
+} */
 </style>

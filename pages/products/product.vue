@@ -416,7 +416,7 @@ export default {};
 <style>
 p,
 a {
-  font-size: 16px;
+  font-size: small;
   color: #000;
 }
 </style>

@@ -32,6 +32,9 @@ export default {};
 </script>
 
 <style scoped>
+a:hover {
+  cursor: pointer;
+}
 .box {
   width: 100%;
   height: 100%;

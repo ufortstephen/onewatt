@@ -23,7 +23,8 @@
           </div>
           <div class="d-flex justify-content-between">
             <p>
-              <span style="font-weight: bold">Total</span> (Inclusive of tax)
+              <span style="font-weight: bolder; color: #000">Total</span>
+              (Inclusive of tax)
             </p>
             <p style="font-weight: bold">$18,400</p>
           </div>
