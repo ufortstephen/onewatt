@@ -51,17 +51,10 @@
             <NuxtLink class="nav-link" to="/shop">Shop</NuxtLink>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Energy</a>
+            <a class="nav-link" href="#">Join</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Mobility</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Data & Payments</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Accessories</a>
+            <a class="nav-link" href="#">About Us</a>
           </li>
         </ul>
         <div class="header__icons" style="gap: 2rem">

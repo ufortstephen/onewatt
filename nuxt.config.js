@@ -1,14 +1,14 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'onewattapp',
+        title: 'OWATTS',
         htmlAttrs: {
             lang: 'en'
         },
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
+            { hid: 'description', name: 'description', content: 'We build remarkable digital product experience that deliver smarter lifestyle, home, business and cities.' },
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [

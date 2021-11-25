@@ -18,20 +18,23 @@
             <AppHeader />
             <div class="hero__text text-center">
               <div class="align-self-center">
-                <h1 class="my-2">It’s not just gas, it’s how it works</h1>
+                <h1 class="my-2">
+                  CONSUMER <span style="color: #ff7e00"> ▪</span> ENERGY
+                  <span style="color: #ff7e00"> ▪</span> FINANCE
+                </h1>
                 <p class="muted__text">
-                  It’s not just gas, it’s how it
-                  <NuxtLink to="/" class="text-white">works.</NuxtLink>
+                  We build remarkable digital product experience that deliver
+                  smarter lifestyle, home, business and cities.
                 </p>
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
                     ><button class="button__white mr-2 mt-3 mt-md-0">
-                      VIEW CATEGORIES
+                      SHOP NOW
                     </button></NuxtLink
                   >
                   <NuxtLink to="/shop"
                     ><button class="btn__border--white mr-2 mt-3 mt-md-0">
-                      PRE ORDER
+                      JOIN US
                     </button></NuxtLink
                   >
                 </p>
@@ -77,10 +80,13 @@
             <AppHeader />
             <div class="hero__text text-center">
               <div class="align-self-center">
-                <h1 class="my-2">Making power available.</h1>
+                <h1 class="my-2">
+                  CONSUMER <span style="color: #ff7e00"> ▪ </span> ENERGY
+                  <span style="color: #ff7e00"> ▪</span> FINANCE.
+                </h1>
                 <p class="muted__text">
-                  View other features of this product
-                  <NuxtLink to="/" class="text-white">here.</NuxtLink>
+                  We build remarkable digital product experience that deliver
+                  smarter lifestyle, home, business and cities.
                 </p>
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
@@ -141,7 +147,7 @@
                 </h1>
                 <p class="muted__text">
                   View other features of this product
-                  <NuxtLink to="/" class="text-white">here.</NuxtLink>
+                  
                 </p>
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop">
@@ -202,7 +208,7 @@
                 </h1>
                 <p class="muted__text">
                   View other features of this product
-                  <NuxtLink to="/" class="text-white">here.</NuxtLink>
+                  
                 </p>
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
@@ -265,6 +271,7 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
 .shortHero {
   /* max-height: 350px; */
   overflow: hidden;
@@ -283,20 +290,26 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
   color: #fff !important;
 }
 
 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: bolder;
   color: #fff;
+}
+p.text-muted {
+  font-size: 1rem;
 }
 
 .bg__one {
-  background-image: url(~/assets/images/home__slide1.jpg);
+  background-image: url(~/assets/images/lp1.jpg);
 }
 .bg__two {
-  background-image: url(~/assets/images/home__slide2.jpg);
+  background-image: url(~/assets/images/lp2.jpg);
   background-color: rgba(0, 0, 0, 0.459);
 }
 .bg__three {
@@ -309,13 +322,13 @@ h1 {
 .hero__text {
   height: 80vh;
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
 
 .muted__text {
   color: #bcbab7;
+  font-size: 1.3rem;
 }
 
 button {
@@ -331,7 +344,9 @@ button {
 }
 
 .button__white {
-  background-color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 .btn__border--white {
   border: 1px solid #fff;

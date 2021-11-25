@@ -1,11 +1,67 @@
 <template>
-  <div class="product__card card">
-    <img src="~assets/images/bg__two.png" alt="" />
-    <div class="category__name py-3 pl-2">
-      <h6 class="">Clean Power</h6>
-      <NuxtLink to="/shop/products">
-        <button class="view__products-btn">VIEW ALL PRODUCTS</button>
-      </NuxtLink>
+  <div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">Clean Power</h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">Smart Home Energy Manager</h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">eMobility</h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">eMobility</h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">Clean Water</h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">Clean Gas</h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
+    </div>
+    <div class="product__card card">
+      <img src="~assets/images/bg__two.png" alt="" />
+      <div class="category__name py-3 pl-2">
+        <h6 class="">Digital Estate </h6>
+        <NuxtLink to="/shop/products">
+          <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>

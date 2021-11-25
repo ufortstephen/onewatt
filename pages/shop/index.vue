@@ -17,20 +17,19 @@
               <AppHeader />
               <div class="hero__text text-center">
                 <div class="align-self-center">
-                  <h1 class="my-2">It’s not just gas, it’s how it works</h1>
+                  <h1 class="my-2">▪ &nbsp;PRODUCT CATEGORIES &nbsp;▪</h1>
                   <p class="muted__text">
-                    It’s not just gas, it’s how it
-                    <NuxtLink to="/" class="text-white">works.</NuxtLink>
+                    <!-- <NuxtLink to="/" class="text-white">works.</NuxtLink> -->
                   </p>
                   <p class="mt-5">
-                    <NuxtLink to="/shop"
+                    <a href="#categories"
                       ><button class="button__white mr-2 mt-3 mt-md-0">
-                        SHOP NOW
-                      </button></NuxtLink
+                        VIEW CATEGORIES
+                      </button></a
                     >
                     <NuxtLink to="/shop"
                       ><button class="btn__border--white mr-2 mt-3 mt-md-0">
-                        PRE ORDER
+                        JOIN US
                       </button></NuxtLink
                     >
                   </p>
@@ -118,7 +117,61 @@
           aria-labelledby="pills-home-tab"
         >
           <div class="products__container section px-3">
-            <ProductCategory v-for="x in 4" :key="x.id" />
+            <div class="product__card card">
+              <img src="~assets/images/cleanPower.jpg" alt="" />
+              <div class="category__name py-3 pl-2">
+                <h6 class="">Clean Power</h6>
+                <NuxtLink to="/shop/products">
+                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+                </NuxtLink>
+              </div>
+            </div>
+            <div class="product__card card">
+              <img src="~assets/images/solar.png" alt="" />
+              <div class="category__name py-3 pl-2">
+                <h6 class="">Smart Home Energy Manager</h6>
+                <NuxtLink to="/shop/products">
+                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+                </NuxtLink>
+              </div>
+            </div>
+
+            <div class="product__card card">
+              <img src="~assets/images/bg__three.png" alt="" />
+              <div class="category__name py-3 pl-2">
+                <h6 class="">eMobility</h6>
+                <NuxtLink to="/shop/products">
+                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+                </NuxtLink>
+              </div>
+            </div>
+            <div class="product__card card">
+              <img src="~assets/images/water.jpeg" alt="" />
+              <div class="category__name py-3 pl-2">
+                <h6 class="">Clean Water</h6>
+                <NuxtLink to="/shop/products">
+                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+                </NuxtLink>
+              </div>
+            </div>
+            <div class="product__card card">
+              <img src="~assets/images/one.png" alt="" />
+              <div class="category__name py-3 pl-2">
+                <h6 class="">Clean Gas</h6>
+                <NuxtLink to="/shop/products">
+                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+                </NuxtLink>
+              </div>
+            </div>
+            <div class="product__card card">
+              <img src="~assets/images/bg__two.png" alt="" />
+              <div class="category__name py-3 pl-2">
+                <h6 class="">Digital Estate</h6>
+                <NuxtLink to="/shop/products">
+                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
+                </NuxtLink>
+              </div>
+            </div>
           </div>
         </div>
         <div
@@ -198,7 +251,10 @@ export default {
 }
 
 h1 {
+  font-family: "Open Sans", sans-serif;
   color: #fff;
+  font-size: 3.2rem;
+  font-weight: bolder;
 }
 
 .bg__one {
@@ -290,6 +346,74 @@ img {
   .carousel-indicators {
     top: 65%;
     display: none;
+  }
+}
+
+.product__card img {
+  width: 100%;
+  height: 300px;
+}
+.card {
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+
+  height: max-content;
+}
+.category__name {
+  background: #f8f8f8;
+}
+.product__card {
+  border-radius: 6px;
+}
+h5 {
+  font-size: 18px;
+}
+
+.view__products-btn {
+  position: relative;
+  background: #303030;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 14px 20px 14px 20px;
+  border-radius: 7px;
+  display: none;
+}
+.card:hover .category__name {
+  position: absolute;
+  bottom: -4rem;
+  width: 100%;
+  padding: 1rem !important;
+}
+.card:hover .category__name h5 {
+  margin-bottom: 1rem;
+}
+
+.card:hover .view__products-btn {
+  position: relative;
+  /* bottom: -3rem;
+  margin-top: 1rem; */
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+@media (max-width: 528px) {
+  .card:hover .category__name {
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+    padding: 1rem !important;
+  }
+  img {
+    /* height: 250px; */
   }
 }
 </style>

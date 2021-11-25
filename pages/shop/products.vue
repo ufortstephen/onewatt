@@ -17,11 +17,31 @@
               <AppHeader />
               <div class="hero__text text-center">
                 <div class="align-self-center">
-                  <h1 class="my-2">Clean Power Electricity</h1>
-                  <p class="muted__text">
-                    It’s not just gas, it’s how it
-                    <NuxtLink to="/" class="text-white">works.</NuxtLink>
+                  <h1 class="my-2">CLEAN ▪ POWER ▪ ELECTRICITY</h1>
+                  <p class="muted__text"></p>
+                  <p class="mt-5">
+                    <a href="#products"
+                      ><button class="button__white mr-2 mt-3 mt-md-0">
+                        VIEW PRODUCTS
+                      </button></a
+                    >
                   </p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center" style="position: relative; top: -2rem">
+              <a href="#products"
+                ><img src="~assets/images/caret_down.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="carousel-item hero__bg bg__two">
+            <div class="px-2 px-md-5 py-4">
+              <AppHeader />
+              <div class="hero__text text-center">
+                <div class="align-self-center">
+                  <h1 class="my-2">CLEAN ▪ POWER ▪ ELECTRICITY</h1>
+                  <p class="muted__text"></p>
                   <p class="mt-5">
                     <NuxtLink to="/shop"
                       ><button class="button__white mr-2 mt-3 mt-md-0">
@@ -33,43 +53,16 @@
               </div>
             </div>
             <div class="text-center" style="position: relative; top: -2rem">
-              <a href="#categories"
+              <a href="#products"
                 ><img src="~assets/images/caret_down.png" alt=""
               /></a>
-            </div>
-          </div>
-          <div class="carousel-item hero__bg bg__two">
-            <div class="px-2 px-md-5 py-4">
-              <AppHeader />
-              <div class="hero__text text-center">
-                <div class="align-self-center">
-                  <h1 class="my-2">Making power available.</h1>
-                  <p class="muted__text">
-                    View other features of this product
-                    <NuxtLink to="/" class="text-white">here.</NuxtLink>
-                  </p>
-                  <p class="mt-5">
-                    <NuxtLink to="/shop"
-                      ><button class="button__white mr-2 mt-3 mt-md-0">
-                        VIEW PRODUCTS
-                      </button></NuxtLink
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="text-center mb-4"
-              style="position: relative; top: -2rem"
-            >
-              <img src="~assets/images/caret_down.png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container section px-3">
+    <div class="container section px-3" id="products">
       <h4 class="mb-3 px-0 px-md-3 text-center text-md-left">New Products</h4>
       <div class="products__container">
         <ProductCard v-for="x in 7" :key="x.id" />
@@ -131,7 +124,6 @@ export default {
   /* font-size: 17px; */
 }
 
-
 @media (max-width: 528px) {
   .nav-pills .nav-link {
     padding: 6px 12px;
@@ -146,13 +138,16 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: rgba(0, 0, 0, 0.5);
   background-position: center;
   color: #fff !important;
 }
 
 h1 {
+  font-family: "Open Sans", sans-serif;
   color: #fff;
+  font-size: 3.5rem;
+  font-weight: bolder;
 }
 
 .bg__one {
