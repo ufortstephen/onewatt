@@ -6,7 +6,7 @@
       id="navbar_top"
     >
       <a class="navbar-brand" href="#"
-        ><img src="~assets/images/logo.png" alt=""
+        ><img src="~assets/images/orange__logo.png" alt=""
       /></a>
       <button
         class="navbar-toggler d-lg-none"

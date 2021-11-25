@@ -37,7 +37,7 @@ a:hover {
 }
 .box {
   width: 100%;
-  height: 100%;
+  height: 70%;
   background: #e6e6e6;
   border-radius: 15px;
 }

@@ -112,7 +112,7 @@ form {
   background: #f8f8f8;
   padding: 2rem;
   min-width: 35%;
-  margin: 3rem auto;
+  margin: 5rem auto;
   color: #2c2926;
   border-radius: 12px;
 }

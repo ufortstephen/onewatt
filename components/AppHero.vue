@@ -9,8 +9,8 @@
       <ol class="carousel-indicators">
         <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#heroCarousel" data-slide-to="1"></li>
-        <li data-target="#heroCarousel" data-slide-to="2"></li>
-        <li data-target="#heroCarousel" data-slide-to="3"></li>
+        <!-- <li data-target="#heroCarousel" data-slide-to="2"></li>
+        <li data-target="#heroCarousel" data-slide-to="3"></li> -->
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active hero__bg bg__one">
@@ -25,8 +25,8 @@
                 </p>
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
-                    ><button class="mr-2 button__white">
-                      ORDER NOW
+                    ><button class="button__white mr-2 mt-3 mt-md-0">
+                      VIEW CATEGORIES
                     </button></NuxtLink
                   >
                   <NuxtLink to="/shop"
@@ -83,9 +83,9 @@
                   <NuxtLink to="/" class="text-white">here.</NuxtLink>
                 </p>
                 <p class="mt-5" v-if="this.$route.name == 'index'">
-                  <NuxtLink to="/shop">
-                    <button class="mr-2 button__white">
-                      ORDER NOW
+                  <NuxtLink to="/shop"
+                    ><button class="button__white mr-2 mt-3 mt-md-0">
+                      VIEW CATEGORIES
                     </button></NuxtLink
                   >
                   <NuxtLink to="/shop">
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div
-            v-if="this.$route.name == 'index'"
+            v-if="this.$route.name !== 'index'"
             class="text-center mb-4"
             style="position: relative; top: -2rem"
           >
@@ -131,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item hero__bg bg__three">
+        <!-- <div class="carousel-item hero__bg bg__three">
           <div class="px-2 px-md-5 py-4">
             <AppHeader />
             <div class="hero__text text-center">
@@ -146,7 +146,7 @@
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop">
                     <button class="mr-2 button__white">
-                      ORDER NOW
+                      VIEW CATEGORIES
                     </button></NuxtLink
                   >
                   <NuxtLink to="/shop"
@@ -191,8 +191,8 @@
               <img src="~assets/images/ig__icon.png" alt="" />
             </div>
           </div>
-        </div>
-        <div class="carousel-item hero__bg bg__four">
+        </div> -->
+        <!-- <div class="carousel-item hero__bg bg__four">
           <div class="px-2 px-md-5 py-4">
             <AppHeader />
             <div class="hero__text text-center">
@@ -248,25 +248,31 @@
               <img src="~assets/images/ig__icon.png" alt="" />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    check() {
+      alert(99);
+    },
+  },
+};
 </script>
 
 <style>
 .shortHero {
-  max-height: 350px;
+  /* max-height: 350px; */
   overflow: hidden;
 }
 
 @media (min-width: 1640px) {
   .shortHero {
-    max-height: 45vh;
+    /* max-height: 45vh; */
   }
 }
 </style>
@@ -287,10 +293,10 @@ h1 {
 }
 
 .bg__one {
-  background-image: url(~/assets/images/one.png);
+  background-image: url(~/assets/images/home__slide1.jpg);
 }
 .bg__two {
-  background-image: url(~/assets/images/bg__two.png);
+  background-image: url(~/assets/images/home__slide2.jpg);
   background-color: rgba(0, 0, 0, 0.459);
 }
 .bg__three {
@@ -364,6 +370,7 @@ img {
   left: 4%;
   margin: 0;
   justify-content: revert;
+  width: max-content;
 }
 .carousel-indicators .active {
   opacity: 1;

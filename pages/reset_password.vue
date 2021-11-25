@@ -7,7 +7,7 @@
     <div class="login__section">
       <form>
         <h5>Reset password</h5>
-        <div class="form-group my-5">
+        <div class="form-group my-3">
           <label for="">Email address</label>
           <input
             type="email"

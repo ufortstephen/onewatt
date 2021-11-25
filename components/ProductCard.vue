@@ -7,7 +7,7 @@
       <p class="mb-0">
         NGN 250,000 <strike class="small ml-3">NGN 500,000</strike>
       </p>
-      <NuxtLink to="/products/product">
+      <NuxtLink to="/shop/product">
         <button class="view__products-btn">VIEW DETAILS</button>
       </NuxtLink>
     </div>

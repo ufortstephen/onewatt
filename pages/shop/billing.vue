@@ -5,12 +5,52 @@
     </div>
 
     <div class="login__section">
-      <form>
-        <h5>Sign in</h5>
-        <div class="form-group my-4">
-          <label for="">Email address</label>
+      <form @submit.prevent="goToCart">
+        <h5 class="mb-5">Shipping</h5>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">First name</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Last name</label>
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for=""> Address</label>
           <input
-            type="email"
+            type="text"
+            class="form-control"
+            name=""
+            id=""
+            aria-describedby="emailHelpId"
+            placeholder=""
+          />
+          <small id="emailHelpId" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+          <label for=""> Phone Number</label>
+          <input
+            type="number"
             class="form-control"
             name=""
             id=""
@@ -21,45 +61,39 @@
         </div>
 
         <div class="form-group">
-          <label for="">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            name=""
-            id=""
-            placeholder=""
-          />
+          <label for="">Country</label>
+          <select class="form-control" name="" id="">
+            <option>[NGN]</option>
+            <option>[NGN]</option>
+            <option>[NGN]</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">State</label>
+          <select class="form-control" name="" id="">
+            <option>[ST]</option>
+            <option>[ST]</option>
+            <option>[ST]</option>
+          </select>
         </div>
 
-        <div class="row mt-2 mb-5">
-          <div class="col-md-6 order-2 order-md-2">
-            <div class="form-check">
-              <label class="container" style="width: max-content !important"
-                ><small style="font-size: small">Remember me</small>
-                <input type="radio" name="radio" />
-                <span class="checkmark"></span>
-              </label>
-            </div>
-          </div>
-          <div class="col-md-6 text-right blue order-0 order-md-3">
-            <NuxtLink to="/reset_password" class="blue"
-              >Forgot password</NuxtLink
-            >
-          </div>
-        </div>
-        <input type="submit" value="SIGN IN" />
-
-        <p class="mt-3">
-          If you don’t have an account,
-          <NuxtLink to="/register" class="blue">Register</NuxtLink>
-        </p>
+        <input type="submit" value="NEXT" class="mt-3" />
       </form>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    goToCart() {
+      this.$router.push("/cart");
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -82,7 +116,10 @@ form {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"],
+input[type="number"],
+select {
   height: 45px;
   border-radius: 6px;
   background: transparent !important;
@@ -99,7 +136,8 @@ input[type="submit"] {
   font-size: 14px;
 }
 
-input:focus {
+input:focus,
+select:focus {
   border-color: #c5c5c5;
 }
 .blue {
@@ -107,6 +145,9 @@ input:focus {
   cursor: pointer;
 }
 
+.form-group {
+  margin-bottom: 1.4rem;
+}
 /*  */
 /* The container */
 .container {
