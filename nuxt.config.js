@@ -1,5 +1,6 @@
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
+
     head: {
         title: 'OWATTS',
         htmlAttrs: {
@@ -19,7 +20,6 @@ export default {
             },
             {
                 href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
-
             },
 
             {

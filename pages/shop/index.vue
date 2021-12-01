@@ -9,7 +9,7 @@
       >
         <ol class="carousel-indicators">
           <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#heroCarousel" data-slide-to="1"></li>
+          <!-- <li data-target="#heroCarousel" data-slide-to="1"></li> -->
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active hero__bg bg__one">
@@ -17,14 +17,12 @@
               <AppHeader />
               <div class="hero__text text-center">
                 <div class="align-self-center">
-                  <h1 class="my-2">▪ &nbsp;PRODUCT CATEGORIES &nbsp;▪</h1>
-                  <p class="muted__text">
-                    <!-- <NuxtLink to="/" class="text-white">works.</NuxtLink> -->
-                  </p>
+                  <h1 class="my-2">▪ &nbsp;EXPERIENCE FREEDOM &nbsp;▪</h1>
+                  <p class="muted__text"></p>
                   <p class="mt-5">
                     <a href="#categories"
                       ><button class="button__white mr-2 mt-3 mt-md-0">
-                        VIEW CATEGORIES
+                        VIEW PRODUCTS
                       </button></a
                     >
                     <NuxtLink to="/shop"
@@ -40,38 +38,6 @@
               <a href="#categories"
                 ><img src="~assets/images/caret_down.png" alt=""
               /></a>
-            </div>
-          </div>
-          <div class="carousel-item hero__bg bg__two">
-            <div class="px-2 px-md-5 py-4">
-              <AppHeader />
-              <div class="hero__text text-center">
-                <div class="align-self-center">
-                  <h1 class="my-2">Making power available.</h1>
-                  <p class="muted__text">
-                    View other features of this product
-                    <NuxtLink to="/" class="text-white">here.</NuxtLink>
-                  </p>
-                  <p class="mt-5">
-                    <NuxtLink to="/shop"
-                      ><button class="button__white mr-2 mt-3 mt-md-0">
-                        SHOP NOW
-                      </button></NuxtLink
-                    >
-                    <NuxtLink to="/shop">
-                      <button class="btn__border--white mr-2 mt-3 mt-md-0">
-                        PRE ORDER
-                      </button></NuxtLink
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="text-center mb-4"
-              style="position: relative; top: -2rem"
-            >
-              <img src="~assets/images/caret_down.png" alt="" />
             </div>
           </div>
         </div>
@@ -93,21 +59,21 @@
             role="tab"
             aria-controls="pills-home"
             aria-selected="true"
-            >Product Categoreis</a
-          >
+            >Product
+          </a>
         </li>
-        <!-- <li class="nav-item" role="presentation">
+        <li class="nav-item" role="presentation">
           <a
             class="nav-link"
             id="pills-profile-tab"
             data-toggle="pill"
             href="#pills-profile"
             role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-            >Accessories</a
-          >
-        </li> -->
+            aria-controls="pills-profile-tab"
+            aria-selected="true"
+            >Accessories
+          </a>
+        </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div
@@ -117,56 +83,19 @@
           aria-labelledby="pills-home-tab"
         >
           <div class="products__container section px-3">
-            <div class="product__card card">
-              <img src="~assets/images/cleanPower.jpg" alt="" />
-              <div class="category__name py-3 pl-2">
-                <h6 class="">Clean Power</h6>
-                <NuxtLink to="/shop/products">
-                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
-                </NuxtLink>
-              </div>
-            </div>
-            <div class="product__card card">
-              <img src="~assets/images/solar.png" alt="" />
-              <div class="category__name py-3 pl-2">
-                <h6 class="">Smart Home Energy Manager</h6>
-                <NuxtLink to="/shop/products">
-                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
-                </NuxtLink>
-              </div>
-            </div>
+            <div
+              class="product__card card"
+              v-for="(product, index) in products"
+              :key="index"
+            >
+              <img
+                :src="require(`@/assets/images/${product.img}`)"
+                alt="fr"
+                class="image"
+              />
 
-            <div class="product__card card">
-              <img src="~assets/images/bg__three.png" alt="" />
               <div class="category__name py-3 pl-2">
-                <h6 class="">eMobility</h6>
-                <NuxtLink to="/shop/products">
-                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
-                </NuxtLink>
-              </div>
-            </div>
-            <div class="product__card card">
-              <img src="~assets/images/water.jpeg" alt="" />
-              <div class="category__name py-3 pl-2">
-                <h6 class="">Clean Water</h6>
-                <NuxtLink to="/shop/products">
-                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
-                </NuxtLink>
-              </div>
-            </div>
-            <div class="product__card card">
-              <img src="~assets/images/one.png" alt="" />
-              <div class="category__name py-3 pl-2">
-                <h6 class="">Clean Gas</h6>
-                <NuxtLink to="/shop/products">
-                  <button class="view__products-btn">VIEW ALL PRODUCTS</button>
-                </NuxtLink>
-              </div>
-            </div>
-            <div class="product__card card">
-              <img src="~assets/images/bg__two.png" alt="" />
-              <div class="category__name py-3 pl-2">
-                <h6 class="">Digital Estate</h6>
+                <h6 class="">{{ product.name }}</h6>
                 <NuxtLink to="/shop/products">
                   <button class="view__products-btn">VIEW ALL PRODUCTS</button>
                 </NuxtLink>
@@ -181,22 +110,57 @@
           aria-labelledby="pills-profile-tab"
         >
           <div class="products__container section px-3">
-            <ProductCategory v-for="x in 4" :key="x.id" />
+            <div class="products__container section px-3">
+              <div
+                class="product__card card"
+                v-for="(product, index) in products"
+                :key="index"
+              >
+                <img
+                  :src="require(`@/assets/images/${product.img}`)"
+                  alt="fr"
+                  class="image"
+                />
+                <div class="category__name py-3 pl-2">
+                  <h6 class="">{{ product.name }}</h6>
+                  <NuxtLink to="/shop/products">
+                    <button class="view__products-btn">
+                      VIEW ALL PRODUCTS
+                    </button>
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- {{ getComponent }} -->
     <AppFooter />
   </div>
 </template>
 
 <script>
+import { mapState, mapGetters } from "vuex";
 export default {
   name: "Shop",
   data() {
     return {
       text: "VIEW ALL PRODUCTS",
     };
+  },
+
+  computed: {
+    ...mapState(["products"]),
+    ...mapGetters(["getComponent"]),
+  },
+
+  methods: {
+    // ...mapActions(["getProduct"]),
+  },
+
+  created() {
+    // this.getProduct();
   },
 };
 </script>
@@ -225,7 +189,6 @@ export default {
 }
 .products__container {
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem;
   row-gap: 3rem;
@@ -241,7 +204,7 @@ export default {
 }
 
 .hero__bg {
-  min-height: 100vh;
+  min-height: max-content;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
@@ -267,11 +230,11 @@ h1 {
 }
 
 .hero__text {
-  height: 80vh;
+  height: max-content;
   display: flex;
-
   align-items: center;
   justify-content: center;
+  /* padding: 2rem 0; */
 }
 
 .muted__text {
@@ -343,6 +306,12 @@ img {
 }
 
 @media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .muted__text {
+    font-size: 1.2rem;
+  }
   .carousel-indicators {
     top: 65%;
     display: none;
@@ -414,6 +383,15 @@ a:hover {
   }
   img {
     /* height: 250px; */
+  }
+}
+
+@media (min-width: 700px) {
+  .hero__text {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

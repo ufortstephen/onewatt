@@ -9,7 +9,7 @@
       >
         <ol class="carousel-indicators">
           <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#heroCarousel" data-slide-to="1"></li>
+          <!-- <li data-target="#heroCarousel" data-slide-to="1"></li> -->
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active hero__bg bg__one">
@@ -24,29 +24,6 @@
                       ><button class="button__white mr-2 mt-3 mt-md-0">
                         VIEW PRODUCTS
                       </button></a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="text-center" style="position: relative; top: -2rem">
-              <a href="#products"
-                ><img src="~assets/images/caret_down.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="carousel-item hero__bg bg__two">
-            <div class="px-2 px-md-5 py-4">
-              <AppHeader />
-              <div class="hero__text text-center">
-                <div class="align-self-center">
-                  <h1 class="my-2">CLEAN ▪ POWER ▪ ELECTRICITY</h1>
-                  <p class="muted__text"></p>
-                  <p class="mt-5">
-                    <NuxtLink to="/shop"
-                      ><button class="button__white mr-2 mt-3 mt-md-0">
-                        VIEW PRODUCTS
-                      </button></NuxtLink
                     >
                   </p>
                 </div>
@@ -124,6 +101,10 @@ export default {
   /* font-size: 17px; */
 }
 
+.products__container::-webkit-scrollbar {
+  display: none !important;
+}
+
 @media (max-width: 528px) {
   .nav-pills .nav-link {
     padding: 6px 12px;
@@ -134,11 +115,11 @@ export default {
 }
 
 .hero__bg {
-  min-height: 100vh;
+  min-height: max-content;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.473);
   background-position: center;
   color: #fff !important;
 }
@@ -151,7 +132,9 @@ h1 {
 }
 
 .bg__one {
-  background-image: url(~/assets/images/clean__power.jpg);
+  background-image: url(~/assets/images/solar-panel.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .bg__two {
   background-image: url(~/assets/images/cleanPower.jpg);
@@ -159,11 +142,11 @@ h1 {
 }
 
 .hero__text {
-  height: 80vh;
+  height: max-content;
   display: flex;
-
   align-items: center;
   justify-content: center;
+  /* padding: 2rem 0; */
 }
 
 .muted__text {
@@ -238,6 +221,20 @@ img {
   .carousel-indicators {
     top: 65%;
     display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .muted__text {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 700px) {
+  .hero__text {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 </style>

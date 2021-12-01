@@ -3,10 +3,8 @@
     <div class="out__of__stock"><small>OUT OF STOCK</small></div>
     <img src="~assets/images/bg__two.png" alt="" />
     <div class="category__name py-3 pl-2">
-      <h6 class="">Product Name</h6>
-      <p class="mb-0">
-        NGN 250,000 <strike class="small ml-3">NGN 500,000</strike>
-      </p>
+      <h6 class="">Home 3</h6>
+
       <NuxtLink to="/shop/product">
         <button class="view__products-btn">VIEW DETAILS</button>
       </NuxtLink>
@@ -62,9 +60,10 @@ h5 {
   border-radius: 7px;
   display: none;
 }
+
 .card:hover .category__name {
   position: absolute;
-  bottom: -5.8rem;
+  bottom: -3.8rem;
   width: 100%;
   padding: 1rem !important;
 }
@@ -74,8 +73,6 @@ h5 {
 
 .card:hover .view__products-btn {
   position: relative;
-  /* bottom: -3rem;
-  margin-top: 1rem; */
   display: block;
 }
 

@@ -91,12 +91,12 @@
                 <p class="mt-5" v-if="this.$route.name == 'index'">
                   <NuxtLink to="/shop"
                     ><button class="button__white mr-2 mt-3 mt-md-0">
-                      VIEW CATEGORIES
+                      SHOP NOW
                     </button></NuxtLink
                   >
                   <NuxtLink to="/shop">
                     <button class="btn__border--white mr-2 mt-3 mt-md-0">
-                      PRE ORDER
+                      JOIN US
                     </button></NuxtLink
                   >
                 </p>
@@ -137,124 +137,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="carousel-item hero__bg bg__three">
-          <div class="px-2 px-md-5 py-4">
-            <AppHeader />
-            <div class="hero__text text-center">
-              <div class="align-self-center">
-                <h1 class="my-2">
-                  Empower the next generation with green energy.
-                </h1>
-                <p class="muted__text">
-                  View other features of this product
-                  
-                </p>
-                <p class="mt-5" v-if="this.$route.name == 'index'">
-                  <NuxtLink to="/shop">
-                    <button class="mr-2 button__white">
-                      VIEW CATEGORIES
-                    </button></NuxtLink
-                  >
-                  <NuxtLink to="/shop"
-                    ><button class="btn__border--white mr-2 mt-3 mt-md-0">
-                      PRE ORDER
-                    </button></NuxtLink
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            v-if="this.$route.name !== 'index'"
-            class="text-center mb-4"
-            style="position: relative; top: -2rem; cursor: pointer"
-          >
-            <img src="~assets/images/caret_down.png" alt="" />
-          </div>
-          <div
-            v-else
-            class="row px-2 px-md-5 py-3"
-            style="position: absolute; width: 100%; bottom: 0"
-          >
-            <div class="col-md-6 text-center text-md-left">
-              <NuxtLink to="/" class="text-white">Terms of use</NuxtLink>
-              <NuxtLink to="/" class="text-white mx-3">Contact us</NuxtLink>
-              <NuxtLink to="/" class="text-white">FAQ</NuxtLink>
-            </div>
-            <div
-              class="
-                col-md-6
-                text-center
-                mt-2 mt-md-0
-                text-md-right
-                social__links
-                pr-0
-              "
-            >
-              <img src="~assets/images/fb__icon.png" alt="" />
-              <img src="~assets/images/wa__icon.png" alt="" />
-              <img src="~assets/images/twitter__icon.png" alt="" />
-              <img src="~assets/images/ig__icon.png" alt="" />
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="carousel-item hero__bg bg__four">
-          <div class="px-2 px-md-5 py-4">
-            <AppHeader />
-            <div class="hero__text text-center">
-              <div class="align-self-center">
-                <h1 class="my-2">
-                  We give you the power whenever you need it.
-                </h1>
-                <p class="muted__text">
-                  View other features of this product
-                  
-                </p>
-                <p class="mt-5" v-if="this.$route.name == 'index'">
-                  <NuxtLink to="/shop"
-                    ><button class="mr-2 button__white">
-                      ADD TO CART
-                    </button></NuxtLink
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            v-if="this.$route.name !== 'index'"
-            class="text-center mb-0"
-            style="position: relative; top: -2rem; cursor: pointer"
-          >
-            <img src="~assets/images/caret_down.png" alt="" />
-          </div>
-
-          <div
-            v-else
-            class="row px-2 px-md-5 py-3"
-            style="position: absolute; width: 100%; bottom: 0"
-          >
-            <div class="col-md-6 text-center text-md-left">
-              <NuxtLink to="/" class="text-white">Terms of use</NuxtLink>
-              <NuxtLink to="/" class="text-white mx-3">Contact us</NuxtLink>
-              <NuxtLink to="/" class="text-white">FAQ</NuxtLink>
-            </div>
-            <div
-              class="
-                col-md-6
-                text-center
-                mt-2 mt-md-0
-                text-md-right
-                social__links
-                pr-0
-              "
-            >
-              <img src="~assets/images/fb__icon.png" alt="" />
-              <img src="~assets/images/wa__icon.png" alt="" />
-              <img src="~assets/images/twitter__icon.png" alt="" />
-              <img src="~assets/images/ig__icon.png" alt="" />
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -277,11 +159,11 @@ export default {
   overflow: hidden;
 }
 
-@media (min-width: 1640px) {
+/* @media (min-width: 1640px) {
   .shortHero {
-    /* max-height: 45vh; */
+    max-height: 45vh;
   }
-}
+} */
 </style>
 
 <style scoped>
@@ -306,10 +188,12 @@ p.text-muted {
 }
 
 .bg__one {
-  background-image: url(~/assets/images/lp1.jpg);
+  /* background-image: url(~/assets/images/lp1.jpg); */
+  background-image: url(~/assets/images/home-overlay.jpg);
 }
 .bg__two {
-  background-image: url(~/assets/images/lp2.jpg);
+  /* background-image: url(~/assets/images/lp2.jpg); */
+  background-image: url(https://cdn.jhmrad.com/wp-content/uploads/modern-style-duplex-plans-just_93272.jpg);
   background-color: rgba(0, 0, 0, 0.459);
 }
 .bg__three {
@@ -401,6 +285,12 @@ img {
   .carousel-indicators {
     top: 65%;
     display: none;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .muted__text {
+    font-size: 1.2rem;
   }
 }
 </style>
