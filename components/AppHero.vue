@@ -190,6 +190,7 @@ h1 {
   font-weight: bolder;
   color: #fff;
 }
+
 p.text-muted {
   font-size: 1rem;
 }
@@ -198,6 +199,7 @@ p.text-muted {
   /* background-image: url(~/assets/images/lp1.jpg); */
   background-image: url(~/assets/images/home11.png);
 }
+
 .bg__two {
   /* background-image: url(~/assets/images/lp2.jpg); */
   background-image: url(~/assets/images/home22.jpg);
