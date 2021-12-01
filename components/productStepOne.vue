@@ -1,52 +1,146 @@
 <template>
   <div>
-    <div class="product__details p-3">
-      <h3>Solar</h3>
+    <div class="product__details p-3" v-if="one">
+      <h2>Home 3</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quae libero
-        harum, nihil quod porro neque sequi ipsa maxime labore?
+        A premium roof with integrated solar and battery storage that gives you
+        energy security, outage protection and peace of mind
       </p>
-
-      <div class="form-group mt-3">
-        <label for="">Home address</label>
-        <input
-          type="email"
-          class="form-control"
-          name=""
-          id=""
-          aria-describedby="emailHelpId"
-          placeholder="31, Sanusi Street, Idumota Lagos"
-        />
-      </div>
-      <div class="form-group">
-        <label for="">Average electric bill</label>
-        <div class="input-group mb-3">
+      <div v-if="home">
+        <div class="form-group mt-5">
+          <label for="">Home address</label>
           <input
-            type="text"
+            type="email"
             class="form-control"
-            placeholder="$200"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
+            name=""
+            id=""
+            aria-describedby="emailHelpId"
+            placeholder="31, Sanusi Street, Idumota Lagos"
           />
-          <div class="input-group-append" style="background: transparent">
-            <span
-              class="input-group-text"
-              style="background: transparent"
-              id="basic-addon2"
-              ><small>/ Month</small></span
-            >
+        </div>
+        <div class="form-group">
+          <label for="">Average electric bill</label>
+          <div class="input-group mb-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="$200"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append" style="background: transparent">
+              <span
+                class="input-group-text"
+                style="background: transparent"
+                id="basic-addon2"
+                ><small>/ Month</small></span
+              >
+            </div>
           </div>
+        </div>
+        <div class="text-info mb-4" style="cursor: pointer" @click="toggleHome">
+          My home is new or being built
         </div>
       </div>
 
-      <div class="text-info mb-4">My home is new or being built</div>
+      <div v-if="built">
+        <div class="form-check">
+          <label class="check">
+            <small style="font-weight: bold">My home is new</small> <br />
+            <small style="font-size: small; position: relative; top: -1rem"
+              >The structure is complete</small
+            >
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="check">
+            <small style="font-weight: bold">My home is being built</small>
+            <br />
+            <small style="font-size: small; position: relative; top: -1rem"
+              >Construction is underway , or will start in the nexy year.</small
+            >
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="check">
+            <small style="font-weight: bold"
+              >I am planning on building a new home</small
+            >
+            <br />
+            <small style="font-size: small; position: relative; top: -1rem"
+              >Construction won't start for at least a year.</small
+            >
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div class="form-group mt-5">
+          <label for="">Home address</label>
+          <input
+            type="email"
+            class="form-control"
+            name=""
+            id=""
+            aria-describedby="emailHelpId"
+            placeholder="31, Sanusi Street, Idumota Lagos"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Home square footage</label>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="600"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append" style="background: transparent">
+              <span
+                class="input-group-text"
+                style="background: transparent"
+                id="basic-addon2"
+                ><small>/ sq &nbsp; ft</small></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Number of stories</label>
+          <div class="input-group mb-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="One storey"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append" style="background: transparent">
+              <span
+                class="input-group-text"
+                style="background: transparent"
+                id="basic-addon2"
+                ><small> &nbsp; </small></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-info mb-4" style="cursor: pointer" @click="toggleHome">
+          I've lived in my house for over a year.
+        </div>
+      </div>
 
       <button
         class="btn-place__order w-100"
         style="border-radius: 8px !important"
+        @click="threeShow"
       >
         <small>NEXT</small>
       </button>
+
       <button
         class="btn-speak w-100 mt-4"
         style="border-radius: 8px !important"
@@ -54,11 +148,33 @@
         <small>SPEAK TO AN AGENT</small>
       </button>
     </div>
+    <productStepThree v-if="three" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      one: true,
+      home: true,
+      built: false,
+      three: false,
+    };
+  },
+  methods: {
+    toggleHome() {
+      this.home = !this.home;
+      this.built = !this.built;
+    },
+    threeShow() {
+      this.one = false;
+      this.home = false;
+      this.built = false;
+      this.three = true;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -145,5 +261,88 @@ input:focus {
     max-width: 700px;
     margin: 1.75rem auto;
   }
+}
+
+.form-check-label input {
+  display: block;
+  height: 45px;
+  border-radius: 6px;
+  background: transparent !important;
+  font-size: SMALL;
+  margin-top: 1rem;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 0px;
+}
+
+/* The check */
+.check {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* border: 1px solid #c4c5c5; */
+  border-radius: 10px;
+}
+
+/* Hide the browser's default radio button */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  background-color: #2c2926;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.check .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 </style>

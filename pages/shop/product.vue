@@ -6,8 +6,8 @@
 
     <div class="products">
       <div class="product__image px-3"></div>
-      <!-- <productStepOne /> -->
-      <productStepThree v-if="true" />
+      <productStepOne />
+      <productStepThree v-if="false" />
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="product__details p-3">
-      <h3>Solar</h3>
+      <h2>Home 3</h2>
       <p class="text-muted">
         A premium roof with integrated solar and battery storage that gives you
         energy security, outage protection and peace of mind
@@ -62,7 +62,7 @@
                 </div>
                 <div>$70,000</div>
               </div>
-              <h6 class="my-2">Powerwall battery</h6>
+              <h6 class="my-2">Pawa battery</h6>
               <ul
                 class="nav nav-pills mb-3 battery"
                 id="pills-tab"
@@ -262,6 +262,36 @@
 
       <h5>What’s in the package</h5>
 
+      <div class="row my-4">
+        <div class="col-md-4">
+          <div class="cat__holder">
+            <img src="~assets/images/Vector.png" alt="" />
+            <p class="count">3</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cat__holder">
+            <img src="~assets/images/Vector.png" alt="" />
+            <p class="count">3</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="cat__holder">
+            <img src="~assets/images/Vector.png" alt="" />
+            <p class="count">3</p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="text-info mb-4"
+        type="button"
+        data-toggle="modal"
+        data-target="#staticBackdrop"
+      >
+        View product manual here
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </a>
+
       <div class="order__summary">
         <h5>Order Summary</h5>
         <div class="d-flex justify-content-between">
@@ -315,6 +345,21 @@ export default {};
 </script>
 
 <style scoped>
+.cat__holder {
+  text-align: center;
+  padding: 1.6rem 0;
+  border-radius: 5px;
+  background: #c5c5c5;
+  position: relative;
+}
+.count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #929292;
+  position: absolute;
+  right: 0.3rem;
+}
 .product__details {
   position: absolute;
   left: 60%;

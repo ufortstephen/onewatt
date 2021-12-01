@@ -19,8 +19,15 @@
             <div class="hero__text text-center">
               <div class="align-self-center">
                 <h1 class="my-2">
-                  CONSUMER <span style="color: #ff7e00"> ▪</span> ENERGY
-                  <span style="color: #ff7e00"> ▪</span> FINANCE
+                  CONSUMER
+                  <span style="color: #ff7e00" class="d-none d-md-inline">
+                    ▪</span
+                  >
+                  ENERGY
+                  <span style="color: #ff7e00" class="d-none d-md-inline">
+                    ▪</span
+                  >
+                  FINANCE
                 </h1>
                 <p class="muted__text">
                   We build remarkable digital product experience that deliver
@@ -189,12 +196,12 @@ p.text-muted {
 
 .bg__one {
   /* background-image: url(~/assets/images/lp1.jpg); */
-  background-image: url(~/assets/images/home-overlay.jpg);
+  background-image: url(~/assets/images/home11.png);
 }
 .bg__two {
   /* background-image: url(~/assets/images/lp2.jpg); */
-  background-image: url(https://cdn.jhmrad.com/wp-content/uploads/modern-style-duplex-plans-just_93272.jpg);
-  background-color: rgba(0, 0, 0, 0.459);
+  background-image: url(~/assets/images/home22.jpg);
+  background-color: rgba(0, 0, 0, 0.59);
 }
 .bg__three {
   background-image: url(~/assets/images/bg__three.png);

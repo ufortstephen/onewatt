@@ -1,12 +1,12 @@
 <template>
   <div class="product__card card">
-    <div class="out__of__stock"><small>OUT OF STOCK</small></div>
-    <img src="~assets/images/bg__two.png" alt="" />
+    <!-- <div class="out__of__stock"><small>OUT OF STOCK</small></div> -->
+    <img src="~assets/images/ss.png" alt="" />
     <div class="category__name py-3 pl-2">
       <h6 class="">Home 3</h6>
 
       <NuxtLink to="/shop/product">
-        <button class="view__products-btn">VIEW DETAILS</button>
+        <button class="view__products-btn">MAKE RESERVATION</button>
       </NuxtLink>
     </div>
   </div>

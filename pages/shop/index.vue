@@ -15,7 +15,7 @@
           <div class="carousel-item active hero__bg bg__one">
             <div class="px-2 px-md-5 py-4">
               <AppHeader />
-              <div class="hero__text text-center">
+              <!-- <div class="hero__text text-center">
                 <div class="align-self-center">
                   <h1 class="my-2">▪ &nbsp;EXPERIENCE FREEDOM &nbsp;▪</h1>
                   <p class="muted__text"></p>
@@ -32,9 +32,12 @@
                     >
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
-            <div class="text-center" style="position: relative; top: -2rem">
+            <div
+              class="text-center space-top"
+              style="position: relative; top: -2rem"
+            >
               <a href="#categories"
                 ><img src="~assets/images/caret_down.png" alt=""
               /></a>
@@ -164,6 +167,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.space-top {
+  padding-top: 10rem;
+}
+</style>
 
 <style scoped>
 .nav__tabs {
@@ -320,7 +329,7 @@ img {
 
 .product__card img {
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 .card {
   position: relative;
