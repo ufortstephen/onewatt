@@ -231,7 +231,9 @@ h1 {
 
 .bg__one {
   /* background-image: url(~/assets/images/home__slide2.jpg); */
-  background-image: url(~/assets/images/one.png);
+  background-image: url(~/assets/images/solar-panel.png);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .bg__two {
   background-image: url(~/assets/images/clean__power.jpg);
