@@ -33,42 +33,46 @@
             class="d-flex justify-content-between border-bottom mt-3"
             style="font-weight: bold"
           >
-            <p>Sutotal</p>
-            <p>$18,400</p>
+            <!-- <p>Sutotal</p>
+            <p>$18,400</p> -->
           </div>
           <div class="d-flex justify-content-between border-bottom mt-3">
-            <p>Shopping</p>
-            <p>$18,400</p>
+            <!-- <p>Shopping</p>
+            <p>$18,400</p> -->
           </div>
           <div class="d-flex justify-content-between mt-3">
-            <p>
+            <!-- <p>
               <span style="font-weight: bolder; color: #000">Total</span>
               (Inclusive of tax)
             </p>
-            <p style="font-weight: bold">$18,400</p>
+            <p style="font-weight: bold">$18,400</p> -->
           </div>
 
           <h6 class="mt-4">Select mode of Payment</h6>
 
           <div class="form-check">
             <label class="check"
-              ><small style="font-size: small">OWATTS Pay (Instalment)</small>
+              ><small style="font-size: small"
+                >Enabled Plan (Subscription)
+              </small>
               <input type="radio" name="radio" />
               <span class="checkmark"></span>
             </label>
 
             <label class="check"
-              ><small style="font-size: small">Pay with card</small>
+              ><small style="font-size: small">Plus Plan (Buy & Own)</small>
               <input type="radio" name="radio" />
               <span class="checkmark"></span>
             </label>
-            <label class="check"
+            <!-- <label class="check"
               ><small style="font-size: small">Pay by green coin</small>
               <input type="radio" name="radio" />
               <span class="checkmark"></span>
-            </label>
+            </label> -->
           </div>
-          <button class="btn-place__order w-100 my-4">PLACE ORDER</button>
+          <nuxt-link to="cart/reservationMessage">
+            <button class="btn-place__order w-100 my-4">PLACE ORDER</button>
+          </nuxt-link>
         </div>
       </div>
     </div>

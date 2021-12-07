@@ -36,9 +36,9 @@ a {
   width: 60%;
   height: 100%;
   top: 3.8rem;
-  background-image: url(~/assets/images/home-overlay.jpg);
+  background-image: url(~/assets/images/home11.png);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 120%;
   padding-top: 4rem;
 }
 .product__details {

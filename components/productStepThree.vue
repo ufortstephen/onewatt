@@ -271,13 +271,13 @@
         </div>
         <div class="col-md-4">
           <div class="cat__holder">
-            <img src="~assets/images/Vector.png" alt="" />
+            <img src="~assets/images/batt.png" alt="" />
             <p class="count">3</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="cat__holder">
-            <img src="~assets/images/Vector.png" alt="" />
+            <img src="~assets/images/plug.png" alt="" />
             <p class="count">3</p>
           </div>
         </div>
@@ -351,6 +351,7 @@ export default {};
   border-radius: 5px;
   background: #c5c5c5;
   position: relative;
+  height: 120px;
 }
 .count {
   width: 20px;
@@ -359,6 +360,7 @@ export default {};
   background: #929292;
   position: absolute;
   right: 0.3rem;
+  bottom: 0;
 }
 .product__details {
   position: absolute;
